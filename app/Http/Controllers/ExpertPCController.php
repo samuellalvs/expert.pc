@@ -37,8 +37,6 @@ class ExpertPCController extends Controller
 
     public function pc_upgrade($pc, $points){
         
-        
-
         //ordernar array por prioridade de upgrade
         uasort($pc, function($a, $b)
         {
@@ -66,11 +64,16 @@ class ExpertPCController extends Controller
                 //fonte suporta?
                 if($pc['psu']->watts >= $pc['graphics_card']->psu ){
                     $pc['graphics_card'] = $new_graphics_card;
+                    $points = $points - $new_graphics_card->price;
+                }else{
+                    
                 }
             }
         }
         
-        dd($pc);
+        return response()->json([
+            'pc' => $pc
+        ]);
     }
 
     public function hardware_items(){
