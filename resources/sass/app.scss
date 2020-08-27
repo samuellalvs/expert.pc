@@ -1,8 +1,33 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+
+html,
+body {
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-base;
+    background-color: $body-bg;
+    line-height: $line-height-base;
+}
+
+.nav-logo {
+    width: 120px;
+}
+
+.nav-item {
+    .nav-link {
+        font-weight: bold;
+    }
+}
+
+.section-one {
+    background-image: url("../../public/images/background/section-one.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
