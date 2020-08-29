@@ -1,12 +1,12 @@
 import React from "react";
 
-import logo from "../../../../public/images/expert-pc.png";
+import logo from "../../../../public/images/logo-nome-expert-pc-white.svg";
 
 export default function Navbar() {
     return (
-        <div className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="navbar navbar-expand-lg navbar-light fixed-top">
             <a className="navbar-brand" href="#">
-                expert.pc
+                <img className="nav-logo" src={logo} alt="" />
             </a>
             <button
                 className="navbar-toggler"
@@ -26,12 +26,22 @@ export default function Navbar() {
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
                         <a className="nav-link" href="#">
-                            LOGIN
+                            opniões
                         </a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">
-                            Link
+                            ajuda
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">
+                            tutoriais
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">
+                            login
                         </a>
                     </li>
                 </ul>
