@@ -1,20 +1,28 @@
 import React from "react";
 
 import Navbar from "../../global/Navbar";
-import Card from "./components/Card";
+import Carousel from "./components/Carousel";
 
 export default function Home() {
     return (
         <div>
             <Navbar></Navbar>
             <div className="section section-one">
-                <div className="container h-100">
-                    <div className="d-flex align-items-center h-100 ">
-                        <h1 className="text-light">
-                            Lorem ipsum dolor, <br />{" "}
-                            <b>sit amet consectetur adipiscing elit.</b>
-                        </h1>
-                        <Card />
+                <div className="d-flex container h-100 align-items-center">
+                    <div className="d-flex flex-column flex-md-row align-items-center">
+                        <div className="col-12 col-md-6">
+                            <div className="d-flex">
+                                <h1 className="text-light">
+                                    Lorem ipsum dolor, <br />{" "}
+                                    <b>sit amet consectetur adipiscing elit.</b>
+                                </h1>
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-6">
+                            <div className="d-flex">
+                                <Carousel title="Lançamento das RTX 3000" />
+                            </div>
+                        </div>
                     </div>
                 </div>
 

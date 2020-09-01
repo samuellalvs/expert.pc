@@ -71915,7 +71915,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _global_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../global/Navbar */ "./resources/js/components/global/Navbar.js");
-/* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Card */ "./resources/js/components/pages/home/components/Card.js");
+/* harmony import */ var _components_Carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Carousel */ "./resources/js/components/pages/home/components/Carousel.js");
 
 
 
@@ -71923,45 +71923,110 @@ function Home() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_global_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "section section-one"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container h-100"
+    className: "d-flex container h-100 align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-flex align-items-center h-100 "
+    className: "d-flex flex-column flex-md-row align-items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-md-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "d-flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "text-light"
-  }, "Lorem ipsum dolor, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "sit amet consectetur adipiscing elit.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null)));
+  }, "Lorem ipsum dolor, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "sit amet consectetur adipiscing elit.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-md-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "d-flex"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Carousel__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Lan\xE7amento das RTX 3000"
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null)));
 }
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/home/components/Card.js":
-/*!***************************************************************!*\
-  !*** ./resources/js/components/pages/home/components/Card.js ***!
-  \***************************************************************/
+/***/ "./resources/js/components/pages/home/components/Carousel.js":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/pages/home/components/Carousel.js ***!
+  \*******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Card; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Carousel; });
+/* harmony import */ var React__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! React */ "./node_modules/React/index.js");
+/* harmony import */ var React__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(React__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _CarouselItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CarouselItem */ "./resources/js/components/pages/home/components/CarouselItem.js");
+
+
+function Carousel(props) {
+  return /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "carouselExampleCaptions",
+    className: "carousel slide",
+    "data-ride": "carousel"
+  }, /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
+    className: "carousel-indicators"
+  }, /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    "data-target": "#carouselExampleCaptions",
+    "data-slide-to": "0",
+    className: "active"
+  }), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    "data-target": "#carouselExampleCaptions",
+    "data-slide-to": "1"
+  }), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    "data-target": "#carouselExampleCaptions",
+    "data-slide-to": "2"
+  })), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-inner"
+  }, /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CarouselItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    active: "true"
+  }), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CarouselItem__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CarouselItem__WEBPACK_IMPORTED_MODULE_1__["default"], null)), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "carousel-control-prev",
+    href: "#carouselExampleCaptions",
+    role: "button",
+    "data-slide": "prev"
+  }, /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "carousel-control-prev-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sr-only"
+  }, "Previous")), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "carousel-control-next",
+    href: "#carouselExampleCaptions",
+    role: "button",
+    "data-slide": "next"
+  }, /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "carousel-control-next-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sr-only"
+  }, "Next")));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/home/components/CarouselItem.js":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/pages/home/components/CarouselItem.js ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CarouselItem; });
 /* harmony import */ var React__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! React */ "./node_modules/React/index.js");
 /* harmony import */ var React__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(React__WEBPACK_IMPORTED_MODULE_0__);
 
-function Card(props) {
+function CarouselItem(props) {
   return /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "card bg-dark text-white"
+    className: "carousel-item ".concat(props.active == "true" ? "active" : "")
   }, /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "https://www.carrosnaweb.com.br/imgNoticias007/thumb500/L200-Triton-Sport-HPE-S-2021-20.jpg",
-    "class": "card-img",
+    src: "https://via.placeholder.com/600X400",
+    className: "d-block w-100",
     alt: "..."
   }), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "card-img-overlay"
-  }, /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-    "class": "card-title"
-  }, "Card title"), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    "class": "card-text"
-  }, "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    "class": "card-text"
-  }, "Last updated 3 mins ago")));
+    className: "carousel-caption d-none d-md-block"
+  }, /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "First slide label"), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Nulla vitae elit libero, a pharetra augue mollis interdum.")));
 }
 
 /***/ }),
