@@ -71815,6 +71815,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_app_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../sass/app.scss */ "./resources/sass/app.scss");
 /* harmony import */ var _sass_app_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_sass_app_scss__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _pages_home_Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/home/Home */ "./resources/js/components/pages/home/Home.js");
+/* harmony import */ var _pages_opniao_Opniao__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/opniao/Opniao */ "./resources/js/components/pages/opniao/Opniao.js");
+
 
 
 
@@ -71823,8 +71825,12 @@ __webpack_require__.r(__webpack_exports__);
 
 function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    exact: true,
     path: "/",
     component: _pages_home_Home__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    path: "/opniao-do-dono",
+    component: _pages_opniao_Opniao__WEBPACK_IMPORTED_MODULE_5__["default"]
   }));
 }
 
@@ -71881,7 +71887,7 @@ function Navbar() {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "nav-link",
-    href: "#"
+    href: "/opniao-do-dono"
   }, "opni\xF5es")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -71961,7 +71967,7 @@ __webpack_require__.r(__webpack_exports__);
 function Carousel(props) {
   return /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "carouselExampleCaptions",
-    className: "carousel slide",
+    className: "carousel slide shadow",
     "data-ride": "carousel"
   }, /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
     className: "carousel-indicators"
@@ -72027,6 +72033,37 @@ function CarouselItem(props) {
   }), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "carousel-caption d-none d-md-block"
   }, /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "First slide label"), /*#__PURE__*/React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Nulla vitae elit libero, a pharetra augue mollis interdum.")));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/opniao/Opniao.js":
+/*!********************************************************!*\
+  !*** ./resources/js/components/pages/opniao/Opniao.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Opniao; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _global_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../global/Navbar */ "./resources/js/components/global/Navbar.js");
+
+
+function Opniao() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_global_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "section"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "d-flex h-100 justify-content-center align-items center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "card border-0 shadow mt-10"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "card-body"
+  }, "This is some text within a card body."))))));
 }
 
 /***/ }),

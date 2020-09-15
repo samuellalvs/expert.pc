@@ -4,11 +4,13 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "../../sass/app.scss";
 
 import Home from "./pages/home/Home";
+import Opniao from "./pages/opniao/Opniao";
 
 function App() {
     return (
         <BrowserRouter>
-            <Route path="/" component={Home} />
+            <Route exact path="/" component={Home} />
+            <Route path="/opniao-do-dono" component={Opniao} />
         </BrowserRouter>
     );
 }

@@ -29,6 +29,14 @@ body {
     .nav-link {
         font-weight: bold;
         color: $white !important;
+        border-bottom: 2px solid $grey;
+        transition: all 0.2s;
+    }
+
+    .nav-link:hover {
+        color: $purple !important;
+        border-bottom: 2px solid $purple;
+        transition: all 0.2s;
     }
 }
 //navbar classes
@@ -42,4 +50,8 @@ body {
 
 .section-one {
     background-image: url("../../public/images/background/section-one.png");
+}
+
+.mt-10 {
+    margin-top: 10rem;
 }

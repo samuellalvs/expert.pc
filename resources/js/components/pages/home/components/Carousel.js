@@ -6,7 +6,7 @@ export default function Carousel(props) {
     return (
         <div
             id="carouselExampleCaptions"
-            className="carousel slide"
+            className="carousel slide shadow"
             data-ride="carousel"
         >
             <ol className="carousel-indicators">
