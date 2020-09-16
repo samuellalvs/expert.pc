@@ -10938,10 +10938,14 @@ body {
 }
 
 .section-one {
-  background-image: url(/images/section-one.png?83f2fa14ef45361830aff2d05ff598b0);
+  background-image: url("/images/background/section-one.png");
 }
 
-.mt-10 {
-  margin-top: 10rem;
+.card-opniao {
+  background-position: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("/storage/graphics_cards/rtx_2080_super.png");
+  margin: 10rem 0rem 10rem 0rem;
 }
 

@@ -49,9 +49,13 @@ body {
 }
 
 .section-one {
-    background-image: url("../../public/images/background/section-one.png");
+    background-image: url("/images/background/section-one.png");
 }
 
-.mt-10 {
-    margin-top: 10rem;
+.card-opniao {
+    background-position: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/storage/graphics_cards/rtx_2080_super.png");
+    margin: 10rem 0rem 10rem 0rem;
 }
