@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 import Navbar from "../../global/Navbar";
 
@@ -11,25 +13,38 @@ export default function Opniao() {
                     <div className="d-flex h-100 justify-content-center align-items center">
                         <div className="card border-0 shadow card-opniao">
                             <div className="card-body">
-                                <div className="d-flex">
-                                    <div className="col-md-12">
-                                        <h2 className="font-weight-bold">
-                                            RTX 2080 Super
-                                        </h2>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Vestibulum non sapien
-                                        purus. Maecenas id urna non eros sodales
-                                        dictum eget quis lacus. Ut ornare mauris
-                                        eget felis viverra pharetra. Maecenas
-                                        fringilla mollis mollis. Suspendisse sem
-                                        mi, vulputate in luctus eget, faucibus
-                                        id sem. Morbi tempor laoreet urna, ut
-                                        venenatis libero vulputate vel.
-                                        Curabitur venenatis nisi sed ornare
-                                        cursus. Nam nec erat bibendum, eleifend
-                                        velit at, rutrum odio. Vivamus sed erat
-                                        sed nibh laoreet luctus tincidunt in
-                                        libero.
+                                <div className="d-flex flex-column">
+                                    <div className="d-flex">
+                                        <div className="col-md-8">
+                                            <p className="m-0">
+                                                placa de video
+                                            </p>
+                                            <h2 className="font-weight-bold">
+                                                RTX 2080 Super
+                                            </h2>
+                                            <div className="line mb-5"></div>
+                                        </div>
+                                        <div className="col-md-4">
+                                            <img
+                                                className="img-fluid mt-4"
+                                                src="/storage/brands/gigabyte.png"
+                                                alt="Gigabyte"
+                                                srcset=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="d-flex flex-column p-3">
+                                        <p className="m-0">desempenho</p>
+                                        <div className="d-flex">
+                                            <FontAwesomeIcon
+                                                icon={faStar}
+                                                color="yellow"
+                                            />
+                                            <FontAwesomeIcon icon={faStar} />
+                                            <FontAwesomeIcon icon={faStar} />
+                                            <FontAwesomeIcon icon={faStar} />
+                                            <FontAwesomeIcon icon={faStar} />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
