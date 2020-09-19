@@ -21,7 +21,7 @@ export default function Opniao() {
                                             <h2 className="font-weight-bold">
                                                 RTX 2080 Super
                                             </h2>
-                                            <div className="line mb-5"></div>
+                                            <div className="line-purple mb-5"></div>
                                         </div>
                                         <div className="col-12 col-md-4">
                                             <img
@@ -41,6 +41,19 @@ export default function Opniao() {
                                     <Topicos name="preço" rating="5.0" />
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="section bg-light">
+                <div className="container">
+                    <div className="d-flex flex-column pt-5">
+                        <h2 className="font-weight-bold">Avaliações</h2>
+                        <div className="line-green mb-5"></div>
+                    </div>
+                    <div className="d-flex flex-column">
+                        <div className="card shadow-sm border-0">
+                            <div className="card-body">Teste</div>
                         </div>
                     </div>
                 </div>
