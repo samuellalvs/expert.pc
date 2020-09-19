@@ -1,8 +1,7 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 import Navbar from "../../global/Navbar";
+import Topicos from "../opniao/components/Topicos";
 
 export default function Opniao() {
     return (
@@ -14,8 +13,8 @@ export default function Opniao() {
                         <div className="card border-0 shadow card-opniao">
                             <div className="card-body">
                                 <div className="d-flex flex-column">
-                                    <div className="d-flex">
-                                        <div className="col-md-8">
+                                    <div className="d-flex flex-column flex-md-row">
+                                        <div className="col-12 col-md-8">
                                             <p className="m-0">
                                                 placa de video
                                             </p>
@@ -24,28 +23,22 @@ export default function Opniao() {
                                             </h2>
                                             <div className="line mb-5"></div>
                                         </div>
-                                        <div className="col-md-4">
+                                        <div className="col-12 col-md-4">
                                             <img
-                                                className="img-fluid mt-4"
+                                                className="img-fluid mt-md-4"
                                                 src="/storage/brands/gigabyte.png"
                                                 alt="Gigabyte"
-                                                srcset=""
                                             />
                                         </div>
                                     </div>
-                                    <div className="d-flex flex-column p-3">
-                                        <p className="m-0">desempenho</p>
-                                        <div className="d-flex">
-                                            <FontAwesomeIcon
-                                                icon={faStar}
-                                                color="yellow"
-                                            />
-                                            <FontAwesomeIcon icon={faStar} />
-                                            <FontAwesomeIcon icon={faStar} />
-                                            <FontAwesomeIcon icon={faStar} />
-                                            <FontAwesomeIcon icon={faStar} />
-                                        </div>
-                                    </div>
+                                    <Topicos name="desempenho" rating="5.0" />
+                                    <Topicos name="consumo" rating="4.3" />
+                                    <Topicos name="aquecimento" rating="3.8" />
+                                    <Topicos
+                                        name="custo beneficio"
+                                        rating="2.6"
+                                    />
+                                    <Topicos name="preço" rating="5.0" />
                                 </div>
                             </div>
                         </div>

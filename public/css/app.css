@@ -10946,11 +10946,16 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("/storage/graphics_cards/rtx_2080_super.png");
-  margin: 10rem 0rem 10rem 0rem;
+  margin-top: 10vh;
 }
 
 .line {
   border: 5px solid #b482f4;
   width: 100px;
+}
+
+.rating {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
