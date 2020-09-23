@@ -4,8 +4,8 @@ import logo from "../../../../public/images/logo-nome-expert-pc-white.svg";
 
 export default function Navbar() {
     return (
-        <div className="navbar navbar-expand-lg navbar-light fixed-top">
-            <a className="navbar-brand" href="#">
+        <div className="navbar navbar-expand-lg navbar-light">
+            <a className="navbar-brand" href="/">
                 <img className="nav-logo" src={logo} alt="" />
             </a>
             <button

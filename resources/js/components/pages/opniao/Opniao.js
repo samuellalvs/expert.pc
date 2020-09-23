@@ -53,7 +53,46 @@ export default function Opniao() {
                     </div>
                     <div className="d-flex flex-column">
                         <div className="card shadow-sm border-0">
-                            <div className="card-body">Teste</div>
+                            <div className="card-body">
+                                <div className="d-flex">
+                                    <div className="col-md-8">
+                                        <div className="d-flex flex-column">
+                                            <h3 className="rating-user-title mb-0">
+                                                Lorem ipsum dolor sit amet
+                                            </h3>
+                                            <p className="rating-user-name">
+                                                example
+                                            </p>
+
+                                            <p className="font-weight-bold mb-0">
+                                                Prós
+                                            </p>
+                                            <p className="text-justify">
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit.
+                                                Duis dui tortor, feugiat sed
+                                                elit ut, vestibulum ultricies
+                                                ante. Aliquam at sollicitudin
+                                                sem. Maecenas at sapien mollis,
+                                                consequat eros finibus,
+                                                tincidunt ipsum. Quisque porta
+                                                augue nunc, vel imperdiet quam
+                                                tristique ac. In in vulputate
+                                                nisi, in dapibus nisi. Fusce
+                                                ullamcorper sem vitae ante
+                                                mollis, ut semper elit mattis.
+                                                Curabitur tempus ligula vitae
+                                                tempus convallis. Proin faucibus
+                                                pharetra nunc et pretium. Class
+                                                aptent taciti sociosqu ad litora
+                                                torquent per conubia nostra, per
+                                                inceptos himenaeos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

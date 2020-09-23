@@ -18,7 +18,7 @@ body {
 //navbar classes
 
 .navbar-light {
-    background-color: none;
+    background-color: transparent;
 }
 
 .nav-logo {
@@ -43,13 +43,9 @@ body {
 
 //section classes
 .section {
-    height: 100vh;
+    min-height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.section-one {
-    background-image: url("/images/background/section-one.png");
 }
 
 .card-opniao {
@@ -58,7 +54,6 @@ body {
     background-repeat: no-repeat;
     background-image: url("/storage/graphics_cards/rtx_2080_super.png");
     margin-top: 10vh;
-    margin-bottom: 5vh;
 }
 
 .line-purple {
@@ -71,8 +66,22 @@ body {
     width: 100px;
 }
 
+.text-green {
+    color: $green;
+}
+
 //topicos
 .rating {
     font-weight: bold;
     font-size: 2rem;
+}
+
+.rating-user-title {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.rating-user-name {
+    color: #7e7e7e;
+    font-size: 0.9rem;
 }
