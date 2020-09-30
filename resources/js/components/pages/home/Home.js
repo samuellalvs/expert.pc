@@ -1,13 +1,10 @@
 import React from "react";
 
-import Navbar from "../../global/Navbar";
 import Carousel from "./components/Carousel";
 
 export default function Home() {
     return (
         <div>
-            <Navbar></Navbar>
-
             <div className="d-flex section container h-100 align-items-center">
                 <div className="d-flex flex-column flex-md-row align-items-center">
                     <div className="col-12 col-md-6">

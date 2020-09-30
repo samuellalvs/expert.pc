@@ -81956,8 +81956,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _sass_app_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../sass/app.scss */ "./resources/sass/app.scss");
 /* harmony import */ var _sass_app_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_sass_app_scss__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _pages_home_Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/home/Home */ "./resources/js/components/pages/home/Home.js");
-/* harmony import */ var _pages_opniao_Opniao__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/opniao/Opniao */ "./resources/js/components/pages/opniao/Opniao.js");
+/* harmony import */ var _global_Navbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./global/Navbar */ "./resources/js/components/global/Navbar.js");
+/* harmony import */ var _pages_home_Home__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/home/Home */ "./resources/js/components/pages/home/Home.js");
+/* harmony import */ var _pages_opniao_Opniao__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/opniao/Opniao */ "./resources/js/components/pages/opniao/Opniao.js");
+
 
 
 
@@ -81966,13 +81968,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_global_Navbar__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     exact: true,
     path: "/",
-    component: _pages_home_Home__WEBPACK_IMPORTED_MODULE_4__["default"]
+    component: _pages_home_Home__WEBPACK_IMPORTED_MODULE_5__["default"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     path: "/opniao-do-dono",
-    component: _pages_opniao_Opniao__WEBPACK_IMPORTED_MODULE_5__["default"]
+    component: _pages_opniao_Opniao__WEBPACK_IMPORTED_MODULE_6__["default"]
   }));
 }
 
@@ -82062,13 +82064,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _global_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../global/Navbar */ "./resources/js/components/global/Navbar.js");
-/* harmony import */ var _components_Carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Carousel */ "./resources/js/components/pages/home/components/Carousel.js");
-
+/* harmony import */ var _components_Carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Carousel */ "./resources/js/components/pages/home/components/Carousel.js");
 
 
 function Home() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_global_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "d-flex section container h-100 align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "d-flex flex-column flex-md-row align-items-center"
@@ -82084,7 +82084,7 @@ function Home() {
     className: "col-12 col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "d-flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Carousel__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "Lan\xE7amento das RTX 3000"
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null)));
 }
@@ -82191,13 +82191,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Opniao; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _global_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../global/Navbar */ "./resources/js/components/global/Navbar.js");
-/* harmony import */ var _opniao_components_Topicos__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../opniao/components/Topicos */ "./resources/js/components/pages/opniao/components/Topicos.js");
-
+/* harmony import */ var _opniao_components_Topicos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../opniao/components/Topicos */ "./resources/js/components/pages/opniao/components/Topicos.js");
 
 
 function Opniao() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_global_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "section"
@@ -82225,19 +82223,19 @@ function Opniao() {
     className: "img-fluid mt-md-4",
     src: "/storage/brands/gigabyte.png",
     alt: "Gigabyte"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_opniao_components_Topicos__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_opniao_components_Topicos__WEBPACK_IMPORTED_MODULE_1__["default"], {
     name: "desempenho",
     rating: "5.0"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_opniao_components_Topicos__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_opniao_components_Topicos__WEBPACK_IMPORTED_MODULE_1__["default"], {
     name: "consumo",
     rating: "4.3"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_opniao_components_Topicos__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_opniao_components_Topicos__WEBPACK_IMPORTED_MODULE_1__["default"], {
     name: "aquecimento",
     rating: "3.8"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_opniao_components_Topicos__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_opniao_components_Topicos__WEBPACK_IMPORTED_MODULE_1__["default"], {
     name: "custo beneficio",
     rating: "2.6"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_opniao_components_Topicos__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_opniao_components_Topicos__WEBPACK_IMPORTED_MODULE_1__["default"], {
     name: "pre\xE7o",
     rating: "5.0"
   }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
