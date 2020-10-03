@@ -28,4 +28,5 @@ Route::post('/upgrade', 'ExpertPCController@upgrade');
 Route::prefix('/list')->group(function () {
     Route::get('/graphics_card', 'GraphicsCardController@index' );
     Route::get('/graphics_card/{id}', 'GraphicsCardController@find');
+    Route::get('/brands', 'BrandController@index');
 });
